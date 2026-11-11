@@ -1,0 +1,445 @@
+
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #101018;
+    color: white;
+}
+
+
+/* CABEÇALHO */
+
+header {
+    background-color: #171722;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    border-bottom: 1px solid #29293a;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+.logo span {
+    color: #8b45ff;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #a66aff;
+}
+
+.botao-menu {
+    background-color: #853cff;
+    padding: 12px 22px;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* BANNER */
+
+.banner {
+    min-height: 500px;
+    background:
+    linear-gradient(90deg, #101018 20%, rgba(16,16,24,0.75)),
+    url("https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1600");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    padding: 60px 10%;
+}
+
+.banner-conteudo {
+    max-width: 600px;
+}
+
+.destaque {
+    color: #a66aff;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+.banner h1 {
+    font-size: 52px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.banner-conteudo p {
+    color: #ccccd5;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #853cff;
+    padding: 15px 28px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #a66aff;
+    transform: translateY(-3px);
+}
+
+
+/* CATEGORIAS */
+
+.categorias {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.categorias h2 {
+    margin-bottom: 35px;
+    font-size: 27px;
+}
+
+.categorias-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.categoria {
+    background-color: #1b1b29;
+    border: 1px solid #303044;
+    padding: 35px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.categoria:hover {
+    border-color: #853cff;
+    transform: translateY(-5px);
+}
+
+.categoria h3 {
+    margin: 15px 0;
+}
+
+.categoria p {
+    color: #aaa;
+}
+
+
+/* PRODUTOS */
+
+.produtos {
+    padding: 70px 8%;
+    background-color: #15151f;
+}
+
+.titulo-secao {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.titulo-secao p {
+    color: #a66aff;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.titulo-secao h2 {
+    font-size: 32px;
+}
+
+.produtos-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.produto {
+    background-color: #20202d;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #303044;
+    transition: 0.3s;
+}
+
+.produto:hover {
+    transform: translateY(-8px);
+    border-color: #853cff;
+}
+
+.produto img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.produto-info {
+    padding: 20px;
+}
+
+.plataforma {
+    color: #a66aff;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.produto-info h3 {
+    margin: 12px 0;
+    font-size: 20px;
+}
+
+.produto-info p {
+    color: #aaa;
+    font-size: 13px;
+    line-height: 1.6;
+    min-height: 60px;
+}
+
+.preco {
+    font-size: 23px;
+    font-weight: bold;
+    color: #b68aff;
+    margin: 18px 0;
+}
+
+.botao-comprar {
+    display: block;
+    background-color: #853cff;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao-comprar:hover {
+    background-color: #a66aff;
+}
+
+
+/* PROMOÇÕES */
+
+.promocoes {
+    margin: 70px 8%;
+    padding: 55px;
+    background: linear-gradient(120deg, #5822a5, #21113e);
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.promocoes p {
+    color: #e0d0ff;
+    margin: 15px 0;
+    line-height: 1.6;
+}
+
+.promocoes h2 {
+    font-size: 34px;
+}
+
+.promocao-preco {
+    background-color: #171222;
+    padding: 35px;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 220px;
+}
+
+.promocao-preco span {
+    color: #b68aff;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.promocao-preco h3 {
+    font-size: 36px;
+    margin: 15px 0;
+}
+
+
+/* VANTAGENS */
+
+.vantagens {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.vantagens h2 {
+    margin-bottom: 35px;
+}
+
+.vantagens-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.vantagem {
+    background-color: #1b1b29;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.vantagem h3 {
+    margin-bottom: 15px;
+}
+
+.vantagem p {
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* SOBRE */
+
+.sobre {
+    background-color: #171722;
+    padding: 70px 15%;
+    text-align: center;
+}
+
+.sobre h2 {
+    margin-bottom: 25px;
+}
+
+.sobre p {
+    color: #bbb;
+    line-height: 1.8;
+}
+
+
+/* CONTATO */
+
+.contato {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.contato h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.contato p {
+    color: #aaa;
+    margin-bottom: 25px;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    background-color: #08080d;
+    padding: 35px;
+    text-align: center;
+    border-top: 1px solid #29293a;
+}
+
+footer p {
+    color: #888;
+    font-size: 13px;
+    margin-top: 12px;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 900px) {
+
+    .produtos-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .vantagens-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .banner h1 {
+        font-size: 36px;
+    }
+
+    .categorias-container {
+        grid-template-columns: 1fr;
+    }
+
+    .produtos-container {
+        grid-template-columns: 1fr;
+    }
+
+    .promocoes {
+        flex-direction: column;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .promocoes h2 {
+        font-size: 26px;
+    }
+
+    .vantagens-container {
+        grid-template-columns: 1fr;
+    }
+
+}
